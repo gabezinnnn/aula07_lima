@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroGames</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>RetroGames</h1>
+        <p>O melhor site de promoção de games retrôs possível.</p>
+    </header>
+    <main class="container">
+        <div class="titulo-secao">
+            <h1>Top Games</h1>
+            <p>Conheça nossos jogos!</p>
+            <button id="cadastro">+ Cadastrar novo Jogo</button>
+        </div>
+        <section class="games"id="lista-games">
+            <p id="mensagemPaiado">Paiou, não tem nenhum :(</p>
+        </section>
+    </main>
+    <dialog id="modalCadastro">
+        <h2>Novo Jogo</h2>
+        <form id="form">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" required>
+            <label for="console">Console:</label>
+            <input type="text" id="console" required>
+            <label for="desen">Desenvolvedora:</label>
+            <input type="text" id="desen" required>
+            <label for="imagem">Imagem da capa:</label>
+            <input type="url" id="imagem" placeholder="https://link.com/imagem.png" required>
+            <label for="preco">Preço:</label>
+            <input type="number" min="0.01" step="0.01" id="preco" required>
+            <div class="acoes">
+                <button type="submit">Cadastrar</button>
+                <button type="reset" id="cancelar">Limpar</button>
+            </div>
+        </form>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>

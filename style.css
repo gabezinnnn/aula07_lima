@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2f2656;
+    color: #01CDFE;
+}
+
+header {
+    background-color: #17112e;
+    color: #6C3BAA;
+    padding: 30px 8%;
+    border-bottom: 4px solid #01CDFE;
+}
+
+header h1 {
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+header p {
+    color: #FF71CE;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.titulo-secao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.titulo-secao h2 {
+    margin-bottom: 8px;
+}
+
+.titulo-secao p {
+    color: #FF71CE;
+}
+
+button {
+    border: none;
+    border-radius: 6px;
+    padding: 12px 16px;
+    background-color: #01CDFE;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(117, 189, 207);
+}
+
+.games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+#mensagemPaiado {
+    color: #FF71CE;
+}
+
+.card-game {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ecd8ce;
+    box-shadow: 0 4px 12px #000;
+}
+
+.capa {
+    height: 170px;
+    background-color: #17112e;
+    color: #6C3BAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preco {
+    display: block;
+    color: #01CDFE;
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+dialog {
+    width: min(90%, 420px);
+    margin: auto;
+    padding: 25px;
+    border: none;
+    border-radius: 12px;
+}
+
+dialog::backdrop {
+    background-color: #00000099;
+}
+
+dialog h2 {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 14px 0 16px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #01CDFE;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.acoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+button.cancelar {
+    background-color: #01CDFE;
+    color: #17112e;
+}
+
+.info-game {
+    padding: 18px;
+}
+
+.info-game p {
+    display: block;
+    color: #FF71CE;
+    overflow-wrap: #17112e
+}
+
+button.cancelar:hover {
+    background-color: #48d8fc;
+}
+
+.capa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
